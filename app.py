@@ -6,9 +6,10 @@ import logging
 import datetime
 import re
 
-log = logging.getLogger("assistant")
+# Commented out because it doesn't allow me to see the url it's running on
+# log = logging.getLogger("assistant")
 
-logging.basicConfig(filename = "assistant.log", level = logging.INFO)
+# logging.basicConfig(filename = "assistant.log", level = logging.INFO)
 
 from openai import OpenAI
 
@@ -32,6 +33,7 @@ def get_ids():
 @app.route("/get_messages", methods=["GET"])
 def get_messages():
     if thread_id != "":
+        # In get_messages function, a little different though
         thread_messages = client.beta.threads.messages.list(thread_id, order="asc")
         messages = [
             {
@@ -44,7 +46,9 @@ def get_messages():
     else:
         return jsonify(success=False, message="No thread ID")
 
-
+# Can create an assistant either here or using an id from the assistant playground on openai by adding the assistant_id
+# So I could add the assistant_id for my study buddy here
+# And I could refactor this to only use retrieve and the assistant_id from playground
 def create_assistant():
     global assistant_id
     if assistant_id == "":
@@ -78,7 +82,7 @@ def create_thread():
 def index():
     return render_template("index.html", chat_history=chat_history)
 
-
+# Broken route? 405? So does the route in the original openai-quickstart-python assistant-flask
 @app.route("/chat", methods=["POST"])
 def chat():
     content = request.json["message"]
@@ -87,17 +91,22 @@ def chat():
     # Send the message to the assistant
     message_params = {"thread_id": thread_id, "role": "user", "content": content}
 
+    # Within the stand alone While Loop that takes in user_input and eventually exits. Different parameters though. And this is greyed out, so is it being used? There's a thread_messages in the get_messages function
     thread_message = client.beta.threads.messages.create(**message_params)
 
     # Run the assistant
+    # This run is within the process_run function
     run = client.beta.threads.runs.create(
         thread_id=thread_id, assistant_id=assistant_id
     )
     # Wait for the run to complete and get the response
+    # in a while loop within the process_run function (includes phrases to print out while the run is running)
     while run.status != "completed":
         time.sleep(0.5)
         run = client.beta.threads.runs.retrieve(thread_id=thread_id, run_id=run.id)
-
+    # within get_message function - checks if run is completed
+    # this code also has this in an additional place in the get_messages function. 
+    # It's written a bit diffferently. Here .data[0] is extracted. In ours, extracting data[0] is part of a longer line
     response = client.beta.threads.messages.list(thread_id).data[0]
 
     text_content = None
@@ -116,7 +125,7 @@ def chat():
         # Handle the case where no text content is found
         return jsonify(success=False, message="No text content found")
 
-
+# Broken route? 405? So does the route in the original openai-quickstart-python assistant-flask
 @app.route("/reset", methods=["POST"])
 def reset_chat():
     global chat_history

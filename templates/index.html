@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>OpenAI Assistant Chat</title>
+  <title>Use as Template</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
 </head>
 
@@ -75,6 +75,7 @@
           );
         });
 
+    // Probably don't need this but without it the code breaks "POST /chat HTTP/1.1" 415 -
       fetch("/get_files")
         .then((response) => response.json())
         .then((data) => {
