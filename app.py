@@ -7,9 +7,9 @@ import datetime
 import re
 
 # Commented out because it doesn't allow me to see the url it's running on
-# log = logging.getLogger("assistant")
+log = logging.getLogger("assistant")
 
-# logging.basicConfig(filename = "assistant.log", level = logging.INFO)
+logging.basicConfig(filename = "assistant.log", level = logging.INFO)
 
 from openai import OpenAI
 
@@ -49,20 +49,35 @@ def get_messages():
 # Can create an assistant either here or using an id from the assistant playground on openai by adding the assistant_id
 # So I could add the assistant_id for my study buddy here
 # And I could refactor this to only use retrieve and the assistant_id from playground
+# def create_assistant():
+#     global assistant_id
+#     if assistant_id == "":
+#         my_assistant = client.beta.assistants.create(
+#             instructions="You are a helpful assistant. If asked about math or computing problems, write and run code to answer the question.",
+#             name="MyQuickstartAssistant",
+#             model="gpt-3.5-turbo",
+#             tools=[{"type": "code_interpreter"}],
+#         )
+#         assistant_id = my_assistant.id
+#     else:
+#         # todo: use your assistant_id here
+#         # my_assistant = client.beta.assistants.retrieve(assistant_id)
+#         my_assistant = client.beta.assistants.retrieve(assistant_id = "asst_FUTO5sCQkGFaK9UAjLCGaWuq")
+#         assistant_id = my_assistant.id
+
+#     # todo: print out the assistant_id to see if it's from the playground
+#     print(assistant_id)
+#     return my_assistant
+  
+# todo try refactoring the function, removing the conditional to use my assistant_id
+# todo complete: this works, but it relies on me believing. Looking for a way to print out the id so I can check it.
+# todo try turning logging back on 
+# turning on logging worked the asssitant id printed to the command line and showed in the log
 def create_assistant():
     global assistant_id
-    if assistant_id == "":
-        my_assistant = client.beta.assistants.create(
-            instructions="You are a helpful assistant. If asked about math or computing problems, write and run code to answer the question.",
-            name="MyQuickstartAssistant",
-            model="gpt-3.5-turbo",
-            tools=[{"type": "code_interpreter"}],
-        )
-        assistant_id = my_assistant.id
-    else:
-        my_assistant = client.beta.assistants.retrieve(assistant_id)
-        assistant_id = my_assistant.id
-
+    my_assistant = client.beta.assistants.retrieve(assistant_id = "asst_FUTO5sCQkGFaK9UAjLCGaWuq")
+    assistant_id = my_assistant.id
+    print(assistant_id)
     return my_assistant
 
 
