@@ -114,7 +114,8 @@ def chat():
     # todo add moderation here? If passes moderation, add to content which adds to chat_history?
     # this doesn't work
     # typeerror: create() got an unexpected keyword argument 'content'
-    content = moderation(content)
+    # commented out to try in conditional on line 156
+    # content = moderation(content)
     chat_history.append({"role": "user", "content": content})
 
     # Send the message to the assistant
@@ -152,6 +153,8 @@ def chat():
 
     # Check if text content was found
     if text_content:
+        # this doesn't work either. Need to figure out the typeerror
+        text_content = moderation(text_content)
         chat_history.append({"role": "assistant", "content": text_content})
         return jsonify(success=True, message=text_content)
     else:
