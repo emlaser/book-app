@@ -6,9 +6,7 @@ import logging
 import datetime
 import re
 
-# http://127.0.0.1:5000/
-
-# Can comment out because it doesn't allow me to see the url it's running on
+# Commented out because it doesn't allow me to see the url it's running on
 log = logging.getLogger("assistant")
 
 logging.basicConfig(filename = "assistant.log", level = logging.INFO)
@@ -48,8 +46,33 @@ def get_messages():
         return jsonify(success=True, messages=messages)
     else:
         return jsonify(success=False, message="No thread ID")
+
+# Can create an assistant either here or using an id from the assistant playground on openai by adding the assistant_id
+# So I could add the assistant_id for my study buddy here
+# And I could refactor this to only use retrieve and the assistant_id from playground
+# def create_assistant():
+#     global assistant_id
+#     if assistant_id == "":
+#         my_assistant = client.beta.assistants.create(
+#             instructions="You are a helpful assistant. If asked about math or computing problems, write and run code to answer the question.",
+#             name="MyQuickstartAssistant",
+#             model="gpt-3.5-turbo",
+#             tools=[{"type": "code_interpreter"}],
+#         )
+#         assistant_id = my_assistant.id
+#     else:
+#         # todo: use your assistant_id here
+#         # my_assistant = client.beta.assistants.retrieve(assistant_id)
+#         my_assistant = client.beta.assistants.retrieve(assistant_id = "asst_FUTO5sCQkGFaK9UAjLCGaWuq")
+#         assistant_id = my_assistant.id
+
+#     # todo: print out the assistant_id to see if it's from the playground
+#     print(assistant_id)
+#     return my_assistant
   
-# todo - COMPLETED - try refactoring the function, removing the conditional to use my assistant_id
+# todo try refactoring the function, removing the conditional to use my assistant_id
+# todo complete: this works, but it relies on me believing. Looking for a way to print out the id so I can check it.
+# todo try turning logging back on 
 # turning on logging worked the asssitant id printed to the command line and showed in the log
 def create_assistant():
     global assistant_id
@@ -69,38 +92,6 @@ def create_thread():
         thread_id = thread.id
 
     return thread
-  
-# todo try to add moderation. Can be added here as functions and then called after taking in user_input and before adding user_input to chat_history?
-# todo check to see if there's a tool in the assistant playground that can be used instead.
-# todo what is parameter other than user_input? Try swapping out "content"
-# this isn't working. may need to understand moderation better
-# check log: TypeError: create() got an unexpected keyword argument 'content'
-# maybe change them all from content to user_input, message or something else. Need to understand this better to decide
-def check_category_scores(categories, threshold):
-    for key, value in categories:
-        if value > threshold:
-            return True
-        else:
-            return False
-          
-# called about line 115
-def moderation(content):  
-    moderation_result = client.moderations.create(
-        content = content
-    )
-    
-    while check_category_scores(moderation_result.results[0].category_scores, 0.7) or moderation_result.results[0].flagged == True:
-        print("Assistant: Sorry, your message violated our community guidelines. Please try a different prompt.")
-        # don't need for now since we're not using input()
-        # user_input = input("You: ")
-        # if user_input.lower() == "exit":
-        #     print("Goodbye!")
-        #     exit()
-        moderation_result = client.moderations.create(
-            content = content
-        )
-    # added to function from assistant.py
-    return content
 
 
 @app.route("/", methods=["GET"])
@@ -111,10 +102,6 @@ def index():
 @app.route("/chat", methods=["POST"])
 def chat():
     content = request.json["message"]
-    # todo add moderation here? If passes moderation, add to content which adds to chat_history?
-    # this doesn't work
-    # typeerror: create() got an unexpected keyword argument 'content'
-    content = moderation(content)
     chat_history.append({"role": "user", "content": content})
 
     # Send the message to the assistant
@@ -124,9 +111,9 @@ def chat():
     thread_message = client.beta.threads.messages.create(**message_params)
 
     # Run the assistant
-    # This run is within the process_run function. They way this code is written may be just fine for a UI. May not need while true since there's nothing to become false.
+    # This run is within the process_run function
     # todo add lines 18 - 33 from assistant.py and see if it runs
-    # didn't run.
+    # the only change here is the variable name. Changed from run to new_run. Changing back and adjusting added while loop
     run = client.beta.threads.runs.create(
         thread_id=thread_id, assistant_id=assistant_id
     )
@@ -137,6 +124,19 @@ def chat():
         time.sleep(0.5)
         run = client.beta.threads.runs.retrieve(thread_id=thread_id, run_id=run.id)
     
+    # todo remove from finished app. This does print out in the command line but not in the UI. And the current UI has a repeating..., so it's not needed (Emily)
+    # phrases = ["Thinking", "Pondering", "Dotting the i's", "Achieving world peace"]
+    # # todo maybe while true is the right while to use here? since we're not exiting, when would it be false?
+    # while True:
+    #     time.sleep(1)
+    #     # print(random.choice(phrases) + "...")
+    #     run_check = client.beta.threads.runs.retrieve(
+    #         thread_id = thread_id,
+    #         run_id = run.id
+    #     )
+        # not working try commenting this out
+        # if run_check.status in ["cancelled", "failed", "completed", "expired"]:
+        #     return run_check
     # within get_message function - checks if run is completed
     # this code also has this in an additional place in the get_messages function. 
     # It's written a bit diffferently. Here .data[0] is extracted. In ours, extracting data[0] is part of a longer line

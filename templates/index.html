@@ -75,7 +75,7 @@
           );
         });
 
-    // Probably don't need this but without it the code breaks "POST /chat HTTP/1.1" 415 -
+    // Thought I didn't need this because it had to do with files. But it is pulling data from the response and may be pulling the assistant_files - so what is in the assistant_files? XXXProbably don't need this but without it the code breaks "POST /chat HTTP/1.1" 415 -
       fetch("/get_files")
         .then((response) => response.json())
         .then((data) => {

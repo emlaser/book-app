@@ -77,3 +77,421 @@ INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_NjVLlvNs7E
 INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_NjVLlvNs7EaLl8pwATKjw5hm/runs/run_mhkIhWxZIzLYlmdAhqI8laPm "HTTP/1.1 200 OK"
 INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_NjVLlvNs7EaLl8pwATKjw5hm/messages "HTTP/1.1 200 OK"
 INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 11:47:43] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:29:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:29:42] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:29:42] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:29:42] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:29:42] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:29:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/runs/run_MeFELzuY3Gfuvynoven0AqqN "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/runs/run_MeFELzuY3Gfuvynoven0AqqN "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/runs/run_MeFELzuY3Gfuvynoven0AqqN "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:30:00] "POST /chat HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/runs/run_9oeZUj47XthEkKORRSIWMpA0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/runs/run_9oeZUj47XthEkKORRSIWMpA0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/runs/run_9oeZUj47XthEkKORRSIWMpA0 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_fLaRUU7u3itOxamjkTstGXlr/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:50:04] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:52:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:52:30] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:52:30] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:52:30] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:52:30] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 12:52:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/runs/run_hsdai241ohcgGnD9Z6ko12Pl "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/runs/run_hsdai241ohcgGnD9Z6ko12Pl "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/runs/run_hsdai241ohcgGnD9Z6ko12Pl "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 13:42:54] "POST /chat HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/runs/run_OA6FNPBOoBdl5lbJQ1HWklzb "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/runs/run_OA6FNPBOoBdl5lbJQ1HWklzb "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/runs/run_OA6FNPBOoBdl5lbJQ1HWklzb "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/runs/run_OA6FNPBOoBdl5lbJQ1HWklzb "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/runs/run_OA6FNPBOoBdl5lbJQ1HWklzb "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/runs/run_OA6FNPBOoBdl5lbJQ1HWklzb "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_lXW5msHdnimrUPPSxF3uuPaq/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 14:09:01] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:33:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:33:32] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:33:32] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:33:32] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_uGaih22NnelRP9anIEoqNCpR/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:33:32] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:33:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_uGaih22NnelRP9anIEoqNCpR/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_uGaih22NnelRP9anIEoqNCpR/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_uGaih22NnelRP9anIEoqNCpR/runs/run_IFm58VdiyUXc4q0fZWfGLHR5 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_uGaih22NnelRP9anIEoqNCpR/runs/run_IFm58VdiyUXc4q0fZWfGLHR5 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_uGaih22NnelRP9anIEoqNCpR/runs/run_IFm58VdiyUXc4q0fZWfGLHR5 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_uGaih22NnelRP9anIEoqNCpR/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:35:07] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:38:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:38:23] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:38:23] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:38:23] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_sUdOYA5KCkr1HPHqXHpskSxD/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:38:23] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:38:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_sUdOYA5KCkr1HPHqXHpskSxD/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_sUdOYA5KCkr1HPHqXHpskSxD/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_sUdOYA5KCkr1HPHqXHpskSxD/runs/run_5WVne4cS2ijX1o0wXSTL18fj "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_sUdOYA5KCkr1HPHqXHpskSxD/runs/run_5WVne4cS2ijX1o0wXSTL18fj "HTTP/1.1 200 OK"
+ERROR:app:Exception on /chat [POST]
+Traceback (most recent call last):
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1211, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a Run.
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:38:40] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_sUdOYA5KCkr1HPHqXHpskSxD/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_sUdOYA5KCkr1HPHqXHpskSxD/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_sUdOYA5KCkr1HPHqXHpskSxD/runs/run_lKHmkmLDUjj49PAuJwt3K7C8 "HTTP/1.1 200 OK"
+ERROR:app:Exception on /chat [POST]
+Traceback (most recent call last):
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1211, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a Run.
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:39:32] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:41:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:41:19] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:41:19] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:41:19] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_jzvP8XPGurNjh879vE7MNyDP/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:41:19] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:41:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_jzvP8XPGurNjh879vE7MNyDP/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_jzvP8XPGurNjh879vE7MNyDP/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_jzvP8XPGurNjh879vE7MNyDP/runs/run_k2Rsc1FaaxikevqfMhB7W5Rn "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_jzvP8XPGurNjh879vE7MNyDP/runs/run_k2Rsc1FaaxikevqfMhB7W5Rn "HTTP/1.1 200 OK"
+ERROR:app:Exception on /chat [POST]
+Traceback (most recent call last):
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1211, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a Run.
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:41:33] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:43:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:43:14] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:43:14] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:43:14] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_5mYiC7xkD0lysf7VzJnPCczQ/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:43:14] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:43:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_5mYiC7xkD0lysf7VzJnPCczQ/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_5mYiC7xkD0lysf7VzJnPCczQ/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_5mYiC7xkD0lysf7VzJnPCczQ/runs/run_WgS8nMzcPycPsL7SqzoMGYyL "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_5mYiC7xkD0lysf7VzJnPCczQ/runs/run_WgS8nMzcPycPsL7SqzoMGYyL "HTTP/1.1 200 OK"
+ERROR:app:Exception on /chat [POST]
+Traceback (most recent call last):
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 883, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 902, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1211, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, list, tuple with headers or status, Response instance, or WSGI callable, but it was a Run.
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:43:26] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:47:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:47:03] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:47:03] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:47:03] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_aPwZH1qnwWoK2DT1MW0PGUq5/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:47:03] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:47:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_aPwZH1qnwWoK2DT1MW0PGUq5/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_aPwZH1qnwWoK2DT1MW0PGUq5/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_aPwZH1qnwWoK2DT1MW0PGUq5/runs/run_N9PBAc78v3T9EprC67230c42 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_aPwZH1qnwWoK2DT1MW0PGUq5/runs/run_N9PBAc78v3T9EprC67230c42 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_aPwZH1qnwWoK2DT1MW0PGUq5/runs/run_N9PBAc78v3T9EprC67230c42 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_aPwZH1qnwWoK2DT1MW0PGUq5/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 16:47:14] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:01:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:01:40] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:01:40] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:01:40] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_hQjXssMAdh5Gcq3zT9jB9No1/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:01:40] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:01:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_hQjXssMAdh5Gcq3zT9jB9No1/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_hQjXssMAdh5Gcq3zT9jB9No1/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_hQjXssMAdh5Gcq3zT9jB9No1/runs/run_PtgUo0g78pavsWl8VjvSY30Q "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_hQjXssMAdh5Gcq3zT9jB9No1/runs/run_PtgUo0g78pavsWl8VjvSY30Q "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_hQjXssMAdh5Gcq3zT9jB9No1/runs/run_PtgUo0g78pavsWl8VjvSY30Q "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_hQjXssMAdh5Gcq3zT9jB9No1/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:02:17] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:05:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:05:27] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:05:27] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:05:27] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_HjqAEIOR8XF3tccmWWqrbF3C/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:05:27] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:05:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /chat [POST]
+Traceback (most recent call last):
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/app.py", line 119, in chat
+    input = user_input
+UnboundLocalError: local variable 'user_input' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:05:36] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:07:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:07:11] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:07:11] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:07:11] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:07:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Pkvz9KkMCM9n6XA1Xjn7ekwu/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:07:11] "GET /get_messages HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_Pkvz9KkMCM9n6XA1Xjn7ekwu/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_Pkvz9KkMCM9n6XA1Xjn7ekwu/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Pkvz9KkMCM9n6XA1Xjn7ekwu/runs/run_MzyXMp27CTsaG9AWzYiKQOTP "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Pkvz9KkMCM9n6XA1Xjn7ekwu/runs/run_MzyXMp27CTsaG9AWzYiKQOTP "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Pkvz9KkMCM9n6XA1Xjn7ekwu/runs/run_MzyXMp27CTsaG9AWzYiKQOTP "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Pkvz9KkMCM9n6XA1Xjn7ekwu/runs/run_MzyXMp27CTsaG9AWzYiKQOTP "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Pkvz9KkMCM9n6XA1Xjn7ekwu/runs/run_MzyXMp27CTsaG9AWzYiKQOTP "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Pkvz9KkMCM9n6XA1Xjn7ekwu/runs/run_MzyXMp27CTsaG9AWzYiKQOTP "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Pkvz9KkMCM9n6XA1Xjn7ekwu/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [17/Apr/2024 17:07:25] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:02:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:02:37] "[36mGET /static/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:02:37] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:02:37] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_HtB56nZaKnkvYIYKtKkm4CNR/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:02:37] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:02:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_HtB56nZaKnkvYIYKtKkm4CNR/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_HtB56nZaKnkvYIYKtKkm4CNR/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_HtB56nZaKnkvYIYKtKkm4CNR/runs/run_9Xw9wh4xUVZBLOon1n9zlzbK "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_HtB56nZaKnkvYIYKtKkm4CNR/runs/run_9Xw9wh4xUVZBLOon1n9zlzbK "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_HtB56nZaKnkvYIYKtKkm4CNR/runs/run_9Xw9wh4xUVZBLOon1n9zlzbK "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_HtB56nZaKnkvYIYKtKkm4CNR/runs/run_9Xw9wh4xUVZBLOon1n9zlzbK "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_HtB56nZaKnkvYIYKtKkm4CNR/runs/run_9Xw9wh4xUVZBLOon1n9zlzbK "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_HtB56nZaKnkvYIYKtKkm4CNR/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:02:55] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:12:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:12:55] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:12:55] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:12:55] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_rkegGTBo04WINlaCVtcOiBva/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:12:55] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:12:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /chat [POST]
+Traceback (most recent call last):
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/app.py", line 107, in chat
+    content = moderation()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/app.py", line 84, in moderation
+    input = user_input
+UnboundLocalError: local variable 'user_input' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:13:04] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:16:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:16:19] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:16:19] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:16:19] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Zm3CI5gXQIPnkSjjgmpV45Gu/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:16:19] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:16:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /chat [POST]
+Traceback (most recent call last):
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/app.py", line 108, in chat
+    content = moderation(content)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/app.py", line 83, in moderation
+    moderation_result = client.moderations.create(
+TypeError: create() got an unexpected keyword argument 'content'
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:16:30] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:17:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:17:33] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:17:33] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:17:33] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_hD39EMwSt3CAq84GdearzUeT/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:17:33] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:17:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /chat [POST]
+Traceback (most recent call last):
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/app.py", line 109, in chat
+    content = moderation(content)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/app.py", line 83, in moderation
+    moderation_result = client.moderations.create(
+TypeError: create() got an unexpected keyword argument 'content'
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:17:44] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:21:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:21:31] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:21:31] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:21:31] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_DSxH3umylFvINhLQJywQ14r3/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:21:31] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:21:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /chat [POST]
+Traceback (most recent call last):
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/app.py", line 111, in chat
+    content = moderation(content)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/app.py", line 84, in moderation
+    moderation_result = client.moderations.create(
+TypeError: create() got an unexpected keyword argument 'content'
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:21:39] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:31:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:31:55] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:31:55] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:31:55] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_mhDm8Bqe599E0zUxoMsEWaC4/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:31:55] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:31:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /chat [POST]
+Traceback (most recent call last):
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/openai-env/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/lisasavoie/Desktop/assistant-flask-from-quickstart-use-as-template/app.py", line 115, in chat
+    content = moderation()
+TypeError: moderation() missing 1 required positional argument: 'content'
+INFO:werkzeug:127.0.0.1 - - [18/Apr/2024 00:32:04] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
