@@ -40,6 +40,7 @@ def get_messages():
         thread_messages = client.beta.threads.messages.list(thread_id, order="asc")
         messages = [
             {
+                # Todo where does msg come from? This code breaks up the thread_messages where data is extracted elsewhere
                 "role": msg.role,
                 "content": msg.content[0].text.value,
             }
@@ -110,12 +111,13 @@ def index():
 # Broken route? 405? So does the route in the original openai-quickstart-python assistant-flask
 @app.route("/chat", methods=["POST"])
 def chat():
+    # todo can't use "content" when working with openai api, it's a reserved word. Maybe change to user_input...
     content = request.json["message"]
     # todo add moderation here? If passes moderation, add to content which adds to chat_history?
     # this doesn't work
     # typeerror: create() got an unexpected keyword argument 'content'
-    # commented out to try in conditional on line 156
-    # content = moderation(content)
+    # commented out to try in conditional on line 156 - not right - no need to moderate assistant's response
+    content = moderation(content)
     chat_history.append({"role": "user", "content": content})
 
     # Send the message to the assistant
@@ -154,7 +156,8 @@ def chat():
     # Check if text content was found
     if text_content:
         # this doesn't work either. Need to figure out the typeerror
-        text_content = moderation(text_content)
+        # this is the wrong place for this. No need to moderate the content from the assistant
+        # text_content = moderation(text_content)
         chat_history.append({"role": "assistant", "content": text_content})
         return jsonify(success=True, message=text_content)
     else:
