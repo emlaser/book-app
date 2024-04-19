@@ -7,6 +7,9 @@ import datetime
 import re
 
 # http://127.0.0.1:5000/
+# todo print out all the values so I'm sure what data they hold. 
+# todo Check my mapping to the JS to make sure what's sent over when. 
+# todo can the assistant still be personalized with a UI? Can it still ask a name, etc.?
 
 # Can comment out because it doesn't allow me to see the url it's running on
 log = logging.getLogger("assistant")
@@ -77,12 +80,12 @@ def create_thread():
 # this isn't working. may need to understand moderation better
 # check log: TypeError: create() got an unexpected keyword argument 'content'
 # maybe change them all from content to user_input, message or something else. Need to understand this better to decide
-def check_category_scores(categories, threshold):
-    for key, value in categories:
-        if value > threshold:
-            return True
-        else:
-            return False
+# def check_category_scores(categories, threshold):
+#     for key, value in categories:
+#         if value > threshold:
+#             return True
+#         else:
+#             return False
           
 # called about line 115
 # Todo - instead move this into the chat function and make it a conditional. Check to see if it's not flagged != True then it can continue. Else add the message instead of the user_input to the chat_history
@@ -108,13 +111,10 @@ def check_category_scores(categories, threshold):
     moderation_result = client.moderations.create(
         input = user_input
     )
-    
-    while check_category_scores(moderation_result.results[0].category_scores, 0.7) or moderation_result.results[0].flagged == True:
-        print("Assistant: Sorry, your message violated our community guidelines. Please try a different prompt.")
+    # todo use this simpler version
+    while moderation_result.results[0].flagged == True:
+        print("Assistant: Sorry, your message violated our community guidelines. Please try another prompt.")
         user_input = input("You: ")
-        if user_input.lower() == "exit":
-            print("Goodbye!")
-            exit()
         moderation_result = client.moderations.create(
             input = user_input
         )
