@@ -85,23 +85,39 @@ def check_category_scores(categories, threshold):
             return False
           
 # called about line 115
-def moderation(content):  
+# Todo - instead move this into the chat function and make it a conditional. Check to see if it's not flagged != True then it can continue. Else add the message instead of the user_input to the chat_history
+# def moderation(content):  
+#     moderation_result = client.moderations.create(
+#         content = content
+#     )
+    
+#     while check_category_scores(moderation_result.results[0].category_scores, 0.7) or moderation_result.results[0].flagged == True:
+#         print("Assistant: Sorry, your message violated our community guidelines. Please try a different prompt.")
+#         # don't need for now since we're not using input()
+#         # user_input = input("You: ")
+#         # if user_input.lower() == "exit":
+#         #     print("Goodbye!")
+#         #     exit()
+#         moderation_result = client.moderations.create(
+#             content = content
+#         )
+#     # added to function from assistant.py
+#     return content
+
+# todo convert this to a conditional inside of the chat function
     moderation_result = client.moderations.create(
-        content = content
+        input = user_input
     )
     
     while check_category_scores(moderation_result.results[0].category_scores, 0.7) or moderation_result.results[0].flagged == True:
         print("Assistant: Sorry, your message violated our community guidelines. Please try a different prompt.")
-        # don't need for now since we're not using input()
-        # user_input = input("You: ")
-        # if user_input.lower() == "exit":
-        #     print("Goodbye!")
-        #     exit()
+        user_input = input("You: ")
+        if user_input.lower() == "exit":
+            print("Goodbye!")
+            exit()
         moderation_result = client.moderations.create(
-            content = content
+            input = user_input
         )
-    # added to function from assistant.py
-    return content
 
 
 @app.route("/", methods=["GET"])
@@ -117,7 +133,8 @@ def chat():
     # this doesn't work
     # typeerror: create() got an unexpected keyword argument 'content'
     # commented out to try in conditional on line 156 - not right - no need to moderate assistant's response
-    content = moderation(content)
+    # todo instead, add the above moderation here as a conditional != True continues, else add the message, instead of the user_input to chat_history
+    # content = moderation(content)
     chat_history.append({"role": "user", "content": content})
 
     # Send the message to the assistant
