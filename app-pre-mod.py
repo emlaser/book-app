@@ -30,7 +30,6 @@ assistant_id = ""
 thread_id = ""
 
 chat_history = [
-    # todo Change this to prompt for user name, etc.
     {"role": "system", "content": "You are a helpful assistant."},
 ]
 
@@ -131,47 +130,18 @@ def index():
 # Broken route? 405? So does the route in the original openai-quickstart-python assistant-flask
 @app.route("/chat", methods=["POST"])
 def chat():
-    # todo - COMPLETED - this works: can't use "content" when working with openai api, it's a reserved word. Maybe change to user_input...
-    # content = request.json["message"]
-    user_input = request.json["message"]
+    # todo can't use "content" when working with openai api, it's a reserved word. Maybe change to user_input...
+    content = request.json["message"]
     # todo add moderation here? If passes moderation, add to content which adds to chat_history?
     # this doesn't work
     # typeerror: create() got an unexpected keyword argument 'content'
     # commented out to try in conditional on line 156 - not right - no need to moderate assistant's response
-    # todo - COMPLETED - instead, add the above moderation here as a conditional != True continues, else add the message, instead of the user_input to chat_history
-    # This works and prints to the command line, not in the UI (see screenshot) need to add to chat_history
-    # Also, typing exit in the command line resulted in a reponse from the assitant. (screenshot)
-    # todoNot able to get a moderation response to the screen or added to chat history so user can see a message. May be because I changed "content" to "user_input" and then "input"
-    moderation_result = client.moderations.create(
-        input = user_input
-    )
-    while moderation_result.results[0].flagged == True:
-        # print("Assistant: Sorry, your message violated our community guidelines. Please try another prompt.")
-        # user_input = "Assistant: Sorry, your message violated our community guidelines. Please try another prompt."
-        # removing this creates an infinate loop - but I don't need it.
-        # user_input = input("You: ")
-        moderation_result = client.moderations.create(
-            input = user_input
-        )
-        # Todo need to use a different role - system or assistant? Maybe not append to chat_history? How can I get the assistant to print this???
-        # 1. chat_history.append({"role": "user", "content": input})
-        # 2. chat_history.append({"role": "assistant", "content": user_input})
-        # 3. chat_history.append({"role": "assistant", "content": user_input})
-        # return jsonify(success=True, message=user_input)
-        chat_history.append({"role": "assistant", "content": user_input})
-        return jsonify(success=True, message="Assistant: Sorry, your message violated our community guidelines. Please try another prompt.")
-        # {'role': 'user', 'content': <built-in function input>}]
-        print(chat_history)
-        # didn't exit
-        # exit()
-        # What is the capital of France?
-        # Why are fat women so ugly?
-        
-    chat_history.append({"role": "user", "content": user_input})
+    # todo instead, add the above moderation here as a conditional != True continues, else add the message, instead of the user_input to chat_history
+    # content = moderation(content)
+    chat_history.append({"role": "user", "content": content})
 
     # Send the message to the assistant
-    # message_params = {"thread_id": thread_id, "role": "user", "content": content}
-    message_params = {"thread_id": thread_id, "role": "user", "content": user_input}
+    message_params = {"thread_id": thread_id, "role": "user", "content": content}
     
     # Within the stand alone While Loop that takes in user_input and eventually exits. Different parameters though. And this is greyed out, so is it being used? There's a thread_messages in the get_messages function
     thread_message = client.beta.threads.messages.create(**message_params)
@@ -195,7 +165,6 @@ def chat():
     # It's written a bit diffferently. Here .data[0] is extracted. In ours, extracting data[0] is part of a longer line
     response = client.beta.threads.messages.list(thread_id).data[0]
 
-    # very curious about this code. Is it to evaluate if the response is only text and so return only text?
     text_content = None
 
     # Iterate through the content objects to find the first text content
@@ -206,7 +175,9 @@ def chat():
 
     # Check if text content was found
     if text_content:
-        # this is the wrong place for moderation. No need to moderate the content from the assistant
+        # this doesn't work either. Need to figure out the typeerror
+        # this is the wrong place for this. No need to moderate the content from the assistant
+        # text_content = moderation(text_content)
         chat_history.append({"role": "assistant", "content": text_content})
         return jsonify(success=True, message=text_content)
     else:
@@ -217,7 +188,6 @@ def chat():
 @app.route("/reset", methods=["POST"])
 def reset_chat():
     global chat_history
-    # todo change this also to the message we want to see
     chat_history = [{"role": "system", "content": "You are a helpful assistant."}]
 
     global thread_id
@@ -238,3 +208,4 @@ def initialize():
 
 if __name__ == "__main__":
     app.run()
+
