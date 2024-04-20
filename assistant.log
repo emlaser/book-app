@@ -1075,3 +1075,209 @@ INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_tCoGMciwG
 INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_tCoGMciwGo9cq772ei5myphd/runs/run_D5VEbCVRZEVhDl1jWT36jGNW "HTTP/1.1 200 OK"
 INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_tCoGMciwGo9cq772ei5myphd/messages "HTTP/1.1 200 OK"
 INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:33:21] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:37:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:37:29] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:37:29] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:37:29] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:37:29] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:37:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/runs/run_i1C3DXxfIlVFGzZxvxc2hvDR "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/runs/run_i1C3DXxfIlVFGzZxvxc2hvDR "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/runs/run_i1C3DXxfIlVFGzZxvxc2hvDR "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:37:45] "POST /chat HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:37:54] "POST /chat HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/runs/run_cz6p3XQGGiCKIe0BGWdXwRY2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/runs/run_cz6p3XQGGiCKIe0BGWdXwRY2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/runs/run_cz6p3XQGGiCKIe0BGWdXwRY2 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_1HNbw7l0JmZWbZyZ2W7b73JY/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:38:10] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:44:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:44:43] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:44:43] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:44:43] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:44:43] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:44:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/runs/run_BJ8vTfSayTBTfMzcJLV0PuY1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/runs/run_BJ8vTfSayTBTfMzcJLV0PuY1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/runs/run_BJ8vTfSayTBTfMzcJLV0PuY1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/runs/run_BJ8vTfSayTBTfMzcJLV0PuY1 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:03] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:12] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:12] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:12] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:12] "GET /get_messages HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/runs/run_WEaGkeG1ejGk8RC7ZUhOPnMI "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/runs/run_WEaGkeG1ejGk8RC7ZUhOPnMI "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:21] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:32] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:32] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:32] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_Z7Fih58BW0vNQbMHFEbvoplT/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:32] "GET /get_messages HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:42] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:42] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:42] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:42] "GET /get_messages HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_ASaG5aw41bQCtTHqZdiiU8nu "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_ASaG5aw41bQCtTHqZdiiU8nu "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_ASaG5aw41bQCtTHqZdiiU8nu "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_ASaG5aw41bQCtTHqZdiiU8nu "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_ASaG5aw41bQCtTHqZdiiU8nu "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_ASaG5aw41bQCtTHqZdiiU8nu "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_ASaG5aw41bQCtTHqZdiiU8nu "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_ASaG5aw41bQCtTHqZdiiU8nu "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_ASaG5aw41bQCtTHqZdiiU8nu "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_ASaG5aw41bQCtTHqZdiiU8nu "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:45:56] "POST /chat HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_wZjC1NJ7aGKMXRofNkWaXnpD "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_wZjC1NJ7aGKMXRofNkWaXnpD "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:47:11] "POST /chat HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_hdEgMEm1RpWHTSvObODSeP9p "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/runs/run_hdEgMEm1RpWHTSvObODSeP9p "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_pllktGH6azF8RJpebDFRCNMK/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:47:50] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:50:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:50:26] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:50:26] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:50:26] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:50:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:50:26] "GET /get_messages HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/runs/run_sXiDi4Kshb9qbu0HMMghSW43 "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_f0YyHCqFiHd6ny7IyYiNVlbP/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:50:39] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:53:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:53:35] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:53:35] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:53:35] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:53:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_svPcTsQufqjsPDwzwBGtdZOX/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:53:35] "GET /get_messages HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_svPcTsQufqjsPDwzwBGtdZOX/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_svPcTsQufqjsPDwzwBGtdZOX/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_svPcTsQufqjsPDwzwBGtdZOX/runs/run_YCnIk1MmA7SJm2el0ZCkFsNe "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_svPcTsQufqjsPDwzwBGtdZOX/runs/run_YCnIk1MmA7SJm2el0ZCkFsNe "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_svPcTsQufqjsPDwzwBGtdZOX/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:53:49] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/assistants/asst_FUTO5sCQkGFaK9UAjLCGaWuq "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:54:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:54:57] "GET /static/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:54:57] "GET /get_ids HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:54:57] "[33mGET /get_files HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:54:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/messages?order=asc "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:54:57] "GET /get_messages HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_FqRtiQbd7TF6ZmuzA8bjmvpJ "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_FqRtiQbd7TF6ZmuzA8bjmvpJ "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:55:07] "POST /chat HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_LMNREvrBPnpHv9JKhtjTarUF "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_LMNREvrBPnpHv9JKhtjTarUF "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_LMNREvrBPnpHv9JKhtjTarUF "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_LMNREvrBPnpHv9JKhtjTarUF "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_LMNREvrBPnpHv9JKhtjTarUF "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_LMNREvrBPnpHv9JKhtjTarUF "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:55:35] "POST /chat HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_YyyC1V5GzezTlrf1XtOv39Op "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_YyyC1V5GzezTlrf1XtOv39Op "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:56:19] "POST /chat HTTP/1.1" 200 -
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/moderations "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/messages "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_Y0Ue2S5ztVv3FD3vaTsYrgep "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/runs/run_Y0Ue2S5ztVv3FD3vaTsYrgep "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: GET https://api.openai.com/v1/threads/thread_YaJ51x0i47OM73yI9MRQwmH4/messages "HTTP/1.1 200 OK"
+INFO:werkzeug:127.0.0.1 - - [20/Apr/2024 17:56:29] "POST /chat HTTP/1.1" 200 -
