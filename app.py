@@ -7,9 +7,12 @@ import datetime
 import re
 
 # http://127.0.0.1:5000/
+# todo rethink - I've learned how this works. Define the routes and run in the command line first. Then connect with the index.html. There are two routes one that POSTS the chat_history and the other (2) that GETS the threads and the chat_history. 
+# todo move the js to its own folder.
 # todo print out all the values so I'm sure what data they hold. 
 # todo Check my mapping to the JS to make sure what's sent over when. 
 # todo can the assistant still be personalized with a UI? Can it still ask a name, etc.?
+# todo clear out this code and start fresh walking through the lessons as they are. Establish a boilerplate w/flask. Maybe clear out js also. Def move later to another file. The lesson will be about understanding GET and POST in this context. The way this app works is that we GET the ... and then interact with the user and POST what they add, then we GET the thread (takes time), and then when the user asks another question... we POST to the API again. This continues until the user is done and they close the window. A nice would be that the chat is saved so they can view it later. 
 
 # Can comment out because it doesn't allow me to see the url it's running on
 log = logging.getLogger("assistant")
