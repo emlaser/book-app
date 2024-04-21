@@ -112,16 +112,16 @@ def create_thread():
 #     return content
 
 # todo convert this to a conditional inside of the chat function
-    moderation_result = client.moderations.create(
-        input = user_input
-    )
-    # todo use this simpler version
-    while moderation_result.results[0].flagged == True:
-        print("Assistant: Sorry, your message violated our community guidelines. Please try another prompt.")
-        user_input = input("You: ")
-        moderation_result = client.moderations.create(
-            input = user_input
-        )
+    # moderation_result = client.moderations.create(
+    #     input = user_input
+    # )
+    # # todo use this simpler version
+    # while moderation_result.results[0].flagged == True:
+    #     print("Assistant: Sorry, your message violated our community guidelines. Please try another prompt.")
+    #     user_input = input("You: ")
+    #     moderation_result = client.moderations.create(
+    #         input = user_input
+    #     )
 
 
 @app.route("/", methods=["GET"])
