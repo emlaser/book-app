@@ -126,12 +126,7 @@ def chat():
         message = "An error has occurred, please try again."
           
     chat_history.append({"role": "assistant", "content": message})
-    return jsonify(success=True, message=message)
-
-
-    
-    # todo map this to line 41 of chatbot-v3. Can this be trimmed down to .list, .value, and then return jsonify?
-    response = client.beta.threads.messages.list(thread_id).data[0]     
+    return jsonify(success=True, message=message)  
     
 # Reset the chat
 @app.route("/reset", methods=["POST"])
