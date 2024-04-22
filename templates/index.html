@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Use as Template</title>
+  <title>Study Buddy</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
 </head>
 
@@ -12,6 +12,11 @@
   </div>
   <div class="main-content">
     <div class="chat-container">
+      <header>
+        <figure><img="{{ url_for('static', filename='logo.png') }}"></figure>
+        <h1>Study Buddy</h1>
+        <figure><img="{{ url_for('static', filename='logo.png') }}"></figure>
+      </header>
       <div class="messages">
         {% for message in chat_history %}
         <div class="message-role {{ 'user' if message.role == 'user' else '' }}">

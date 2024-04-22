@@ -47,10 +47,10 @@ def get_messages():
             }
             for msg in thread_messages.data
         ]
-        
-        if thread_messages.data[0].content[0].text.annotations:
-            pattern = r'【\d+†source】'
-            message = re.sub(pattern, '', message)
+        # todo throwing and indexerror - log out thread_messages.data. Should this be in a POST request instead?
+        # if thread_messages.data[0].content[0].text.annotations:
+        #     pattern = r'【\d+†source】'
+        #     message = re.sub(pattern, '', message)
         
         return jsonify(success=True, messages=messages)
     else:
@@ -114,7 +114,7 @@ def chat():
     )
 
     while run.status != "completed":
-        time.sleep(1)
+        time.sleep(0.5)
         run = client.beta.threads.runs.retrieve(thread_id = thread_id, run_id = run.id)
     
     # todo map this to line 41 of chatbot-v3. Can this be trimmed down to .list, .value, and then return jsonify?

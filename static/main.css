@@ -16,6 +16,15 @@
   font-style: normal;
 }
 
+:root {
+  --header-background: blue;
+  --header-text-color: white;
+  --default-background: white;
+  --default-text-color: black;
+  --user-block: pink;
+  --assistant-block: lightgray;
+}
+
 body,
 input {
   line-height: 24px;
