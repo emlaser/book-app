@@ -546,7 +546,7 @@ body::after {
   /* Adjust height based on header height */
   /* height: 100vh; */
   /* leave enough space for the header */
-  height: 80vh; 
+  height: 75vh; 
   overflow: auto; /* Allow scrolling within this container */
   align-items: stretch;
 }
