@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "ColfaxAI";
   src:
     url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2) format("woff2"),
@@ -14,22 +14,32 @@
     url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
   font-weight: bold;
   font-style: normal;
-}
+} */
 
 :root {
-  --header-background: blue;
-  --header-text-color: white;
-  --default-background: white;
-  --default-text-color: black;
-  --user-block: pink;
-  --assistant-block: lightgray;
+  --header-background: #3352A1;
+  --header-text-color: #FFFFFF;
+  --default-background: #FFFFFF;
+  --default-text-color: #000000;
+  --user-block: #FFEBFF;
+  --assistant-block: #FFFFFF;
+  --borders: 1px solid #000000;
+  --border-input: 3px solid #2B6DEE;
+  --border-radius: 15px;
+  --placeholder-text-accents: #9E9C9C;
+  --header-text-font-family: "Share Tech", sans-serif;
+  --body-text-font-family: "Nunito", sans-serif;
+
 }
 
 body,
 input {
   line-height: 24px;
-  color: #353740;
-  font-family: "ColfaxAI", Helvetica, sans-serif;
+  /* color: #353740; */
+  color: var(--default-text-color);
+  /* font-family: "ColfaxAI", Helvetica, sans-serif; */
+  font-family: var(--body-text-font-family);
+  background-color: var(--default-background);
 }
 
 body {
@@ -51,16 +61,16 @@ h3 {
   font-size: 32px;
   line-height: 40px;
   font-weight: bold;
-  color: #202123;
+  /* color: #202123; */
   margin: 16px 0 40px;
 }
 
 .chat-container {
   max-width: 600px;
   width: 70%;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   margin: 0 auto;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -68,6 +78,8 @@ h3 {
   overflow-y: auto;
   box-sizing: border-box;
   justify-content: space-between;
+  border: var(--borders);
+  border-radius: var(--border-radius);
 }
 
 .user-message,
@@ -77,17 +89,113 @@ h3 {
   margin-bottom: 8px;
   max-width: 80%;
   word-wrap: break-word;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 1rem;
 }
 
 .user-message {
   align-self: flex-end !important;
-  background-color: #f7f7f8;
+  /* background-color: #f7f7f8; */
+  background-color: var(--user-block);
+  border-radius: var(--border-radius);
+  position: relative;
+
+}
+.user-message:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 30px;
+  bottom: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 30px solid var(--user-block);
 }
 
 .assistant-message {
   align-self: flex-start !important;
-  background-color: #ebfaeb;
+  /* background-color: #ebfaeb; */
+  background-color: var(--assistant-block);
+  border: var(--borders);
+  border-radius: var(--border-radius);
+  position: relative;
+}
+
+.assistant-message:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 30px;
+  bottom: -8px;
+  border: 30px solid;
+  border-color: black black transparent transparent;
+}
+
+.assistant-message:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 30px;
+  bottom: -40px;
+  border: 20px solid;
+  border-color: black black transparent transparent;
+}
+
+.assistant-message:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 30px;
+  bottom: -10px;
+  border: 5px solid;
+  border-color: black black transparent transparent;
+}
+
+.assistant-message:after {
+  content: "";
+  /* display: block; */
+  position: absolute;
+  left: auto;
+  right: 30px;
+  bottom: -8px;
+  width: 0;
+  height: 0;
+  /* border-top: 8px solid transparent; */
+  /* border-bottom: 8px solid transparent; */
+  border-right: 1px solid;
+  border-color: white white transparent transparent;
+}
+
+.assistant-message:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 38px;
+  bottom: -20px;
+  border: 12px solid;
+  border-color: white white transparent transparent;
+}
+
+.assistant-message:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 32.25px;
+  bottom: -5px;
+  border: 5px solid;
+  border-color: white white transparent transparent;
 }
 
 .message-input-container {
@@ -99,12 +207,18 @@ h3 {
   justify-content: center;
   align-items: start;
   z-index: 100;
+  border: var(--border-input);
+  border-radius: var(--border-radius);
+  /* padding: 10px 0 10px 0; */
 }
 
 .message-input-container form {
   display: flex; /* Use flexbox to layout children */
-  align-items: center; /* Align items vertically */
-  width: 100%; /* Take full width to accommodate children */
+  /* align-items: center;  */
+  /* Align items vertically */
+  /* width: 100%;  */
+  width: 90%;
+  /* Take full width to accommodate children */
 }
 
 form {
@@ -117,31 +231,47 @@ form {
 }
 
 textarea {
-  border: 1px solid #c5c5d2;
+  /* border: 1px solid #c5c5d2;
   border-radius: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 24px; */
   width: calc(100% - 20px);
   resize: vertical;
   overflow: auto;
-  margin: 0;
-  margin-right: 10px;
+  /* margin: 0; */
+  /* margin-right: 10px; */
   flex-grow: 1;
-  padding: 8px 12px;
-  max-height: 32px;
+  padding: 20px;
+  height: 100px;
   box-sizing: border-box; /* Include padding in the element's total dimensions */
+  border: none;
 }
 
 input[type="submit"],
 input[type="button"] {
-  padding: 12px 16px;
-  color: #fff;
-  background-color: #10a37f;
-  border: none;
+  /* padding: 12px 16px; */
+  /* color: #fff; */
+  /* background-color: #10a37f; */
+  /* border: none;
   border-radius: 4px;
-  text-align: center;
+  text-align: center; */
   cursor: pointer;
   flex: 1;
   margin: 0 2px;
+}
+
+.button-group {
+  align-self: flex-end;
+}
+
+#send-btn {
+  width: 40px;
+  height: 40px;
+  background-color: var(--default-background);
+  border: none;
+}
+
+.send-icon {
+  width: 20px;
 }
 
 input[type="submit"] {
@@ -161,7 +291,9 @@ input[type="text"] {
 }
 
 ::placeholder {
-  color: #8e8ea0;
+  /* color: #8e8ea0; */
+  color: var(--placeholder-text-accents);
+  font-size: 20px;
   opacity: 1;
 }
 
@@ -198,26 +330,73 @@ input[type="text"] {
   }
 }
 
-.button-group {
+/* .button-group {
   display: flex;
-  align-items: center; /* Add this to vertically center the elements */
-  justify-content: space-between; /* Adjust as needed */
-}
+  align-items: center; 
+  /* Add this to vertically center the elements */
+/*  justify-content: space-between; 
+  /* Adjust as needed */
+/*} */
 
 .file-upload-input {
   display: none; /* Hide the actual input */
 }
 
+/* todo update this because it is needed to see the input box but also hides the header without the code block below */
 #upload-banner {
-  display: none;
-  position: fixed;
+  /* display: none; */
+  /* position: fixed; */
   top: 0;
-  width: 100%;
-  background-color: #10a37f;
-  color: white;
-  text-align: center;
-  padding: 10px;
+  width: 100%; 
+  /* background-color: #10a37f;
+  color: white; */
+  /* text-align: center;
+  padding: 10px; */
   z-index: 1000;
+}
+
+.site-header {
+  /* margin: 50px 0; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site-header h1 {
+  margin: 50px 0;
+  font-size: 7rem;
+  padding-bottom: 20px;
+}
+
+.site-header span {
+ margin: 20px;
+}
+
+.site-header .logo {
+  width: 100px;
+}
+
+.chatbot-header {
+  background-color: var(--header-background);
+  margin-left: -20px;
+  margin-right: -20px;
+  display: flex;
+  align-items: center;
+}
+
+.chatbot-header figure {
+  margin: 20px;
+  width: 100px;
+}
+
+.chatbot-header .logo {
+  width: 100%;
+}
+
+.chatbot-header h2 {
+  font-size: 40px;
+  color: var(--header-text-color);
 }
 
 #ids-container {
@@ -293,8 +472,8 @@ input[type="text"] {
 
 .message-role {
   align-self: flex-start;
-  font-size: 12pt;
-  color: #000000;
+  font-size: 1rem;
+  /* color: #000000; */
   margin-bottom: 4px;
 }
 
@@ -302,7 +481,7 @@ input[type="text"] {
   align-self: flex-end;
 }
 
-#send-btn {
+/* #send-btn {
   width: 42px;
   height: 32px;
   border-radius: 4px;
@@ -313,7 +492,9 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
+
+
 
 .file-upload-section {
   display: flex;
@@ -358,10 +539,14 @@ body::after {
   float: none;
 }
 
+/* todo maybe move height to body? */
 .main-content {
   display: flex;
   flex-direction: row; /* Align children (file upload section and chat container) horizontally */
-  height: 100vh; /* Adjust height based on header height */
+  /* Adjust height based on header height */
+  /* height: 100vh; */
+  /* leave enough space for the header */
+  height: 80vh; 
   overflow: auto; /* Allow scrolling within this container */
   align-items: stretch;
 }
@@ -371,6 +556,7 @@ body::after {
   overflow-y: auto; /* Scroll if content exceeds height */
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 .hidden {

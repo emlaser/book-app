@@ -25,7 +25,7 @@ thread_id = ""
 
 # The array that will hold the chat history as the user and the assistant interact
 chat_history = [
-    {"role": "system", "content": "Hey there! How can i assist you with your learning today?"},
+    {"role": "system", "content": "Hey there! How can I assist you with your learning today?"},
 ]
 
 # Start by getting the assistant_id and thread_id and returning them
@@ -117,11 +117,11 @@ def chat():
     thread_messages = client.beta.threads.messages.list(thread_id)
     
     message = thread_messages.data[0].content[0].text.value
-
+ 
     if thread_messages.data[0].content[0].text.annotations:
         pattern = r'【\d+†source】'
         message = re.sub(pattern, '', message)
-          
+        
     if run.status in ["cancelled", "failed", "expired"]:
         message = "An error has occurred, please try again."
           
@@ -132,7 +132,7 @@ def chat():
 @app.route("/reset", methods=["POST"])
 def reset_chat():
     global chat_history
-    chat_history = [{"role": "system", "content": "Hey there! How can i assist you with your learning today?"}]
+    chat_history = [{"role": "system", "content": "Hey there! How can I assist you with your learning today?"}]
 
     global thread_id
     thread_id = ""
