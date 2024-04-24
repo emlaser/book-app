@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header id="upload-banner" class="site-header">
+  <header class="site-header">
     <h1>Study<span><img src="{{ url_for('static', filename='logo-v4.png' ) }}" class="logo"></span>Buddy</h1>
   </header>
   <main class="main-content">
@@ -86,13 +86,6 @@
             "Thread ID: ",
             data.thread_id
           );
-        });
-
-      // Thought I didn't need this because it had to do with files. But it is pulling data from the response and may be pulling the assistant_files - so what is in the assistant_files? XXXProbably don't need this but without it the code breaks "POST /chat HTTP/1.1" 415 -
-      fetch("/get_files")
-        .then((response) => response.json())
-        .then((data) => {
-          populateFiles(data.assistant_files);
         });
     });
 

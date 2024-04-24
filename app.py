@@ -6,9 +6,10 @@ import datetime
 import re
 
 # app will run at: http://127.0.0.1:5000/
+# todo remove this line before push:
+# Notes to build:  https://docs.google.com/document/d/1y49QyEc7KGbHLmPNWxjFfCtwnmAa-dJh4eUbZZgQyso/edit?usp=sharing
 
 # set up logging in the assistant.log file
-# todo change the name of the file??
 log = logging.getLogger("assistant")
 
 logging.basicConfig(filename = "assistant.log", level = logging.INFO)
@@ -72,7 +73,6 @@ def create_thread():
     return thread
 
 # Function to add to the log in the assistant.log file
-# todo rename file
 def log_run(run_status):
     if run_status in ["cancelled", "failed", "expired"]:
         log.error(str(datetime.datetime.now()) + " Run " + run_status + "\n")
@@ -126,6 +126,7 @@ def chat():
         message = "An error has occurred, please try again."
           
     chat_history.append({"role": "assistant", "content": message})
+    log_run(run.status)
     return jsonify(success=True, message=message)  
     
 # Reset the chat
@@ -133,7 +134,6 @@ def chat():
 def reset_chat():
     global chat_history
     chat_history = [{"role": "system", "content": "Hey there! How can I assist you with your learning today?"}]
-
     global thread_id
     thread_id = ""
     create_thread()
